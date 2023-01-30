@@ -1,0 +1,21 @@
+@urlDev=http://localhost:3051
+
+### set promise
+PUT {{urlDev}}/setPromise
+Content-Type: application/json
+
+{
+    "key":"u1004",
+    "payload":{
+        "userId": 1004,
+        "name": " rey"
+    }
+}
+
+### get promise
+PUT {{urlDev}}/getPromise
+Content-Type: application/json
+
+{
+    "key":"u1001"
+}

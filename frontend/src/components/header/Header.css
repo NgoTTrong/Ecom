@@ -1,0 +1,60 @@
+.header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.head-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8deec;
+    height: 5rem;
+}
+.logo{
+    width: 10%;
+    margin-left: 1rem;
+}
+.logo img{
+    width: 10rem;
+}
+.shop-name{
+    margin-right: 10rem;
+}
+.user{
+    margin-right: 1rem;
+    font-size:2.5rem;
+    font-weight:bold;
+}
+.user:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.cart-container{
+    position: relative;
+    font-size:2.5rem;
+    top: 6rem;
+    right: 5rem;
+}
+.cart{
+    position: absolute;
+    top: -5rem;
+    right: 1rem;
+    color: #666666;
+}
+.cart:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.cart-nums-item{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: -4rem;
+    right: -0.3rem;
+    background-color: rgb(247, 154, 154);
+    border-radius: 50%;
+}

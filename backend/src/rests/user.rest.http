@@ -1,0 +1,14 @@
+@urlDev=http://localhost:3051
+
+
+### register user
+POST {{urlDev}}/users
+Content-Type: application/json
+
+{
+    "user":{
+        "userId" : "u1",
+        "email": "heorey123@gmail.com",
+        "username": "Rey"
+    }
+}

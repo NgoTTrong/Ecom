@@ -1,0 +1,35 @@
+.footer{
+    background-color:#252525;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.footer-info{
+    display: flex;
+    width: 70%;
+}
+.footer-info ul{
+    list-style-type: none;
+}
+.footer-info ul li{
+    font-size: 1rem;
+}
+.contact{
+    margin-right:2rem;
+}
+.shop-info{
+    margin-left: 7rem;
+}
+.best-product{
+    margin-left: 10rem;
+}
+.contact-info *{
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}

@@ -1,0 +1,37 @@
+@urlDev=http://localhost:3051
+
+### get product
+GET {{urlDev}}/products/p1
+
+### get products page
+GET {{urlDev}}/products/get/page_1
+
+### set product
+POST {{urlDev}}/products
+Content-Type: application/json
+
+{
+    "product": {
+        "productId": "p7",
+        "name": "Diy",
+        "brand": "Heo Rey",
+        "price": 1200000,
+        "url":"https://cf.shopee.vn/file/24d48e25b84ded24b5f3db4761c38989",
+        "description": "Nha mo hinh",
+        "realease_date": "6/16/2023",
+        "specs": [
+            {
+                "key": "length",
+                "value":"25cm"
+            },
+            {
+               "key" : "Material" ,
+                "value": "plastic"
+            },
+            {
+               "key" : "Weights" ,
+                "value": "2kg"
+            }
+        ]
+    }
+}

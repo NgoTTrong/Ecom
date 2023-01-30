@@ -1,0 +1,32 @@
+@urlDev=http://localhost:3051
+
+### add cart
+
+POST {{urlDev}}/carts
+Content-Type: application/json
+
+{
+    "product":{
+        "productId" : "p2",
+        "userId" : "u1",
+        "cartId" : "c1", 
+        "inventoryId": "i2",
+        "quantity": 10000
+    }
+}
+
+### remove to cart
+POST {{urlDev}}/carts/remove
+Content-Type: application/json
+
+{
+    "product":{
+        "productId" : "p1",
+        "userId" : "u1",
+        "cartId" : "c1",
+        "inventoryId":"i1",
+        "quantity": 5
+    }
+}
+### get cart information
+GET {{urlDev}}/carts/c1

@@ -1,0 +1,33 @@
+@urlDev=http://localhost:3051
+
+### create order
+
+POST {{urlDev}}/orders
+Content-Type: application/json
+
+{
+    "order":{
+        "cartId": "c1",
+        "userId": "u1",
+        "orderId": "o1",
+        "shipping": {
+            "status":"pending"
+        },
+        "payment": {
+            "type":"cash"
+        }, 
+        "products": [
+            {
+                "productId" : 1,
+                "quantity": 2
+            },
+            {
+                "productId" : 1,
+                "quantity": 3
+            }
+        ]
+    }
+}
+
+### get order
+GET {{urlDev}}/orders/o1

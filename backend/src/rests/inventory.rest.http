@@ -1,0 +1,17 @@
+@urlDev=http://localhost:3051
+
+### add inventory
+
+POST {{urlDev}}/inventories
+Content-Type: application/json
+
+{
+    "inventory":{
+        "inventoryId": "i7",
+        "productId": "p7",
+        "quantity": 1200
+    }
+}
+
+### get inventory
+GET {{urlDev}}/inventories/i1
